@@ -4,6 +4,7 @@
 :root {
   --orange: #e76f51;
   --white: #ffff;
+  --gray: #d2d2d2;
 }
 html {
   font-size: 10px; /* 1rem=10px */
@@ -29,12 +30,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 2.5rem 0;
 }
 .app-logo {
   display: block;
   width: 5.5rem;
   height: 5.5rem;
+  margin-right: 3rem;
 }
 .app-logo__img {
   width: 100%;
@@ -44,8 +46,10 @@ header {
   display: none;
 }
 .menu__item {
+  margin-right: 1.5rem;
 }
 .menu_link {
+  color: var(--gray);
 }
 
 .mobile-menu {
@@ -74,8 +78,14 @@ header {
   display: none;
 }
 .header__link {
+  color: var(--white);
+  font-family: "Roboto Medium";
+  margin-left: 1.5rem;
 }
 .header__link--border {
+  border: 1px solid var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: 10rem;
 }
 .nav__btn {
   background-color: var(--white);
@@ -95,6 +105,10 @@ header {
   border-radius: 2rem;
   position: relative;
   transition: all 100ms ease-in-out;
+}
+.nav__wrapper {
+  display: flex;
+  align-items: center;
 }
 /* منو همبرگری : */
 .nav__btn-line::before,

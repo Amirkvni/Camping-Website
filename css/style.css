@@ -3,6 +3,7 @@
 }
 :root {
   --orange: #e76f51;
+  --white: #ffff;
 }
 html {
   font-size: 10px; /* 1rem=10px */
@@ -12,12 +13,17 @@ body {
   line-height: 1.6;
   font-family: "Roboto";
 }
-
+a {
+  text-decoration: none;
+}
 header {
   background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
     url(../images/header-bg.jpg);
   background-position: center;
   background-size: cover;
+  min-height: 55rem;
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
 }
 .nav {
   display: flex;
@@ -43,14 +49,24 @@ header {
 }
 
 .mobile-menu {
+  margin-bottom: 3rem;
 }
 .mobile-menu__item {
+  margin-bottom: 1rem;
 }
 .mobile-menu__link {
+  color: var(--white);
 }
 .nav-menu__links {
+  display: flex;
 }
 .nav-menu__link {
+  color: var(--white);
+  border: 1px solid var(--white);
+  display: block;
+  padding: 1rem;
+  flex-grow: 1;
+  text-align: center;
 }
 .nav-menu__link--border {
 }
@@ -62,7 +78,7 @@ header {
 .header__link--border {
 }
 .nav__btn {
-  background-color: #fff;
+  background-color: var(--white);
   width: 5.5rem;
   border-radius: 2rem;
   height: 5.5rem;
@@ -88,7 +104,7 @@ header {
   height: 0.3rem;
   background-color: var(--orange);
   position: absolute;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .nav__btn-line::before {
   top: 0.8rem;
@@ -97,7 +113,14 @@ header {
   top: -0.8rem;
 }
 .nav-menu {
-  display: none;
+  position: fixed;
+  background-color: rgb(66, 45, 45);
+  top: 0;
+  left: -25rem;
+  bottom: 0;
+  width: 20rem;
+  padding: 2.5rem;
+  transition: all 250ms ease-in-out;
 }
 .nav__btn--open .nav__btn-line {
   /* ! ادد با جاوا اسکریپت ! */
@@ -108,6 +131,9 @@ header {
 }
 .nav__btn--open .nav__btn-line::after {
   transform: translateY(8px) rotate(-45deg);
+}
+.nav-menu--open {
+  left: 0;
 }
 .nav-menuapp-logo__img {
 }

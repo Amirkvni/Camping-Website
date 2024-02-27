@@ -5,6 +5,7 @@
   --orange: #e76f51;
   --white: #ffff;
   --gray: #d2d2d2;
+  --dark: #3b3735;
 }
 html {
   font-size: 10px; /* 1rem=10px */
@@ -36,7 +37,7 @@ header {
   display: block;
   width: 5.5rem;
   height: 5.5rem;
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 .app-logo__img {
   width: 100%;
@@ -50,8 +51,30 @@ header {
 }
 .menu_link {
   color: var(--gray);
+  transition: color 100ms ease-in;
 }
-
+.menu_link:hover {
+  color: var(--white);
+}
+.menu_link--active {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+.menu_link--active::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: var(--orange);
+  border-radius: 10rem;
+  transform: rotate(45deg);
+  top: 7px;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
 .mobile-menu {
   margin-bottom: 3rem;
 }
@@ -86,6 +109,11 @@ header {
   border: 1px solid var(--white);
   padding: 1rem 2.5rem;
   border-radius: 10rem;
+  transition: all 100ms ease-in;
+}
+.header__link--border:hover {
+  background-color: var(--white);
+  color: var(--dark);
 }
 .nav__btn {
   background-color: var(--white);

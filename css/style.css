@@ -18,12 +18,27 @@ body {
 a {
   text-decoration: none;
 }
+/* healper class : component */
+.btn {
+  display: block;
+  border-radius: 10rem;
+  color: var(--white);
+  background-color: var(--dark);
+  width: 18rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Roboto Medium";
+}
 header {
   background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
     url(../images/header-bg.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 55rem;
+  min-height: 85vh;
   border-bottom-left-radius: 10rem;
   border-bottom-right-radius: 10rem;
 }
@@ -115,8 +130,6 @@ nav links
   padding: 1rem;
   flex-grow: 1;
   text-align: center;
-}
-.nav-menu__link--border {
 }
 /* 
 ==============
@@ -212,35 +225,28 @@ navigarion menu
 .nav-menu--open {
   left: 0;
 }
-.nav-menuapp-logo__img {
+/* 
+=================
+header content    
+==================
+*/
+.header-content {
+  text-align: center;
+  color: var(--white);
+  margin-top: 6rem;
 }
-.nav-menumenu {
+.header-content__caption {
+  font-size: 1.8rem;
+  max-width: 34rem;
+  margin: 0 auto 2rem auto;
 }
-.nav-menumenu__item {
+.header-content__link {
+  background-color: var(--orange);
 }
-.nav-menumenu_link {
-}
-.nav-menu-menu {
-}
-.nav-menumobile-menu {
-}
-.nav-menumobile-menu__item {
-}
-.nav-menumobile-menu__link {
-}
-.nav-menu-menu__links {
-}
-.nav-menu-menu__link {
-}
-.nav-menu-menu__link--border {
-}
-.nav-menuheader__links {
-}
-.nav-menuheader__link {
-}
-.nav-menuheader__link--border {
-}
-.nav-menu__btn {
-}
-.nav-menu__btn-line {
+.header-content__title {
+  font-family: "Archivo Black";
+  font-size: 5rem;
+  line-height: 1.2;
+  max-width: 35rem;
+  margin: 0 auto 3rem auto;
 }

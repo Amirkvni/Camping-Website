@@ -28,9 +28,6 @@
 }
 
 @media (min-width: 1200px) {
-  .header__links {
-    display: block; /*amir*/
-  }
 }
 
 @media (min-width: 1400px) {

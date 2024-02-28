@@ -114,6 +114,28 @@ mobile menu
 }
 .mobile-menu__link {
   color: var(--white);
+  position: relative;
+  transition: all 250ms ease-in-out;
+}
+.mobile-menu__link:hover {
+  padding-left: 2.2rem;
+}
+.mobile-menu__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 1.5rem;
+  height: 0.3rem;
+  background-color: var(--orange);
+  transition: all 250ms ease-in-out;
+  width: 0;
+  border-radius: 10rem;
+}
+.mobile-menu__link:hover::before {
+  width: 1.6rem;
 }
 /* 
 ==============
@@ -130,6 +152,11 @@ nav links
   padding: 1rem;
   flex-grow: 1;
   text-align: center;
+  transition: all 100ms ease-in;
+}
+.nav-menu__link:hover {
+  background-color: var(--white);
+  color: var(--dark);
 }
 /* 
 ==============
@@ -204,11 +231,11 @@ navigarion menu
 */
 .nav-menu {
   position: fixed;
-  background-color: rgb(66, 45, 45);
+  background-color: var(--dark);
   top: 0;
   left: -25rem;
   bottom: 0;
-  width: 20rem;
+  /* width: 20rem; */
   padding: 2.5rem;
   transition: all 250ms ease-in-out;
 }
@@ -224,6 +251,15 @@ navigarion menu
 }
 .nav-menu--open {
   left: 0;
+}
+.nav-menu__title {
+  color: var(--white);
+  font-size: 2rem;
+  font-family: "Archivo Black";
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 /* 
 =================

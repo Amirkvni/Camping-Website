@@ -9,6 +9,7 @@
   --primary-font: "Roboto", Arial, Helvetica, san-serif;
   --primary-font-md: "Roboto Medium", Arial, Helvetica, san-serif;
   --secondary-font: "Archivo Black", Arial, Helvetica, san-serif;
+  --app-bg: #faf4f2;
 }
 html {
   font-size: 10px; /* 1rem=10px */
@@ -17,6 +18,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: var(--primary-font);
+  background-color: var(--app-bg);
 }
 a {
   text-decoration: none;
@@ -289,4 +291,40 @@ header content
   line-height: 1.2;
   max-width: 35rem;
   margin: 0 auto 3rem auto;
+}
+/* 
+=====================
+   Services  
+ =====================
+*/
+.main {
+  padding: 4rem 0;
+}
+.services {
+  min-height: 30rem;
+  margin-top: -20rem;
+}
+.service {
+  background-color: var(--white);
+  color: var(--dark);
+  margin-bottom: 2rem;
+  height: 26rem;
+  /* width: 36rem; */
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 4rem;
+}
+.service__img {
+  display: block;
+}
+.service__title {
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0.6rem 0;
+}
+.service__caption {
 }

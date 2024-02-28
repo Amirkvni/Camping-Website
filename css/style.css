@@ -6,6 +6,9 @@
   --white: #ffff;
   --gray: #d2d2d2;
   --dark: #3b3735;
+  --primary-font: "Roboto", Arial, Helvetica, san-serif;
+  --primary-font-md: "Roboto Medium", Arial, Helvetica, san-serif;
+  --secondary-font: "Archivo Black", Arial, Helvetica, san-serif;
 }
 html {
   font-size: 10px; /* 1rem=10px */
@@ -13,7 +16,7 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.6;
-  font-family: "Roboto";
+  font-family: var(--primary-font);
 }
 a {
   text-decoration: none;
@@ -31,7 +34,7 @@ a {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  font-family: "Roboto Medium";
+  font-family: var(--primary-font-md);
 }
 header {
   background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
@@ -168,7 +171,7 @@ header links
 }
 .nav__link {
   color: var(--white);
-  font-family: "Roboto Medium";
+  font-family: var(--primary-font-md);
   margin-left: 1.5rem;
 }
 .nav__link--border {
@@ -255,12 +258,13 @@ navigarion menu
 .nav-menu__title {
   color: var(--white);
   font-size: 2rem;
-  font-family: "Archivo Black";
+  font-family: var(--secondary-font);
   border-bottom: 1px solid #fff;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   text-align: center;
 }
+Completing the Header section
 /* 
 =================
 header content    
@@ -280,7 +284,7 @@ header content
   background-color: var(--orange);
 }
 .header-content__title {
-  font-family: "Archivo Black";
+  font-family: var(--secondary-font);
   font-size: 5rem;
   line-height: 1.2;
   max-width: 35rem;

@@ -277,6 +277,9 @@ header content
   margin-top: 6rem;
   color: var(--white);
 }
+.header-content {
+  color: var(--white);
+}
 .header-content__caption {
   font-size: 1.8rem;
   max-width: 34rem;
@@ -332,4 +335,33 @@ header content
   font-family: var(--secondary-font);
   font-size: 1.8rem;
   margin: 1.5rem 0 0.6rem 0;
+}
+
+/* 
+=================
+destinations :
+==================
+*/
+.destinations {
+  text-align: center;
+  padding: 6rem 0;
+}
+.destinations__logo {
+}
+.destinations__title {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  max-width: 36rem;
+  margin: 3rem auto;
+}
+.destinations__btn {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background-color: transparent;
+  transition: all 100ms ease-in;
+  margin-top: 3rem;
+}
+.destinations__btn:hover {
+  color: var(--white);
+  background-color: var(--orange);
 }

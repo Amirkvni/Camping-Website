@@ -274,8 +274,8 @@ header content
 */
 .header-content {
   text-align: center;
-  color: var(--white);
   margin-top: 6rem;
+  color: var(--white);
 }
 .header-content__caption {
   font-size: 1.8rem;
@@ -314,7 +314,7 @@ header content
   color: var(--dark);
   margin-bottom: 2rem;
   height: 26rem;
-  width: 32rem;
+  width: 30rem;
   border-radius: 2rem;
   display: flex;
   justify-content: center;

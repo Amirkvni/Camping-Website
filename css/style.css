@@ -25,7 +25,6 @@ a {
 }
 /* healper class : component */
 .btn {
-  display: block;
   border-radius: 10rem;
   color: var(--white);
   background-color: var(--dark);

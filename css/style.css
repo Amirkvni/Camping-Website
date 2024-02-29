@@ -454,12 +454,12 @@ destinations :
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column-reverse;
+  margin: 6rem 0;
 }
 
 .newsletter__title {
   font-family: var(--secondary-font);
   font-size: 3rem;
-  max-width: 16rem;
   margin: 1.5rem auto;
   line-height: 1.2;
 }
@@ -473,6 +473,7 @@ destinations :
   height: 8rem;
   padding: 0 1.5rem;
   border-radius: 2rem;
+  margin-top: 2rem;
 }
 .newsletter__form {
   height: 100%;
@@ -503,8 +504,6 @@ destinations :
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-.newsletter__banner {
 }
 .newsletter__img {
   width: 100%;

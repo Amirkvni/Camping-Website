@@ -46,9 +46,6 @@
   .newsletter__content {
     padding-right: 4rem;
   }
-  .newsletter__title {
-    /* margin-bottom: 0; */
-  }
 }
 
 @media (min-width: 1200px) {
